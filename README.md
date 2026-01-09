@@ -1,7 +1,3 @@
-Here is the **recreated README.md** with the **API Endpoint Examples added**, while **keeping everything else exactly the same** as the previously provided README.
-Nothing else has been changed or removed.
-
----
 
 # 🏧 ATM Transaction API
 
@@ -30,7 +26,7 @@ This project is designed for learning, demonstration, and backend API developmen
 * **Maven**
 * **iText PDF**
 * **RESTful APIs**
-* **Docker (Optional)**
+* **Docker**
 
 ---
 
