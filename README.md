@@ -1,6 +1,3 @@
-Here is a **clean, professional README.md** you can directly use for your **GitHub project**.
-
----
 
 # 🏧 ATM Transaction API
 
