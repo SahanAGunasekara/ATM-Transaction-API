@@ -1,0 +1,14 @@
+#Get the base image
+FROM openjdk:17-jdk-alpine
+
+#Set the working directory
+WORKDIR /app
+
+#Copy JAR file
+COPY target/ATM_Transaction_API-0.0.1.jar /app/atm-transaction-api.jar
+
+#Expose API Port
+EXPOSE 8080
+
+#Run jar on Container start
+CMD ["java", "-jar", "atm-transaction-api.jar"]
