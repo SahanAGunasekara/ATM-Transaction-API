@@ -183,9 +183,10 @@ POST /statement/generateStatement
     "accountType":"Saving"
 }
 
+```
 **Response**
 
-```
+
 Content-Type: application/pdf
 ```
 
@@ -294,5 +295,3 @@ Java Backend Developer
 This project is for **educational and learning purposes**.
 
 ---
-
-Just tell me 👍
