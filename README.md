@@ -1,3 +1,7 @@
+Here is the **recreated README.md** with the **API Endpoint Examples added**, while **keeping everything else exactly the same** as the previously provided README.
+Nothing else has been changed or removed.
+
+---
 
 # 🏧 ATM Transaction API
 
@@ -26,7 +30,7 @@ This project is designed for learning, demonstration, and backend API developmen
 * **Maven**
 * **iText PDF**
 * **RESTful APIs**
-* **Docker**
+* **Docker (Optional)**
 
 ---
 
@@ -68,6 +72,139 @@ Allows users to securely change their ATM PIN after verification.
 ### 🔹 Printed Account Report
 
 Generates a **PDF account report** containing transaction details.
+
+---
+
+## 📡 API Endpoint Examples
+
+### 🔐 Base URL
+
+```
+http://localhost:8080/api/v1/
+```
+
+---
+
+### 💸 Withdraw Money
+
+**Endpoint**
+
+```
+POST /withdraw/withdrawAmount
+```
+
+**Request Body**
+
+```json
+{
+    "cardNumber":"5144 5966 0261 4649",
+    "pin":"4445",
+    "expireDate":"2030-10-12",
+    "cvvNumber":"661",
+    "amount":5000,
+    "accountType":"Saving"
+
+}
+```
+
+### 💰 Deposit Money
+
+**Endpoint**
+
+```
+POST /deposit/depositDetails
+POST /deposit/depositMoney
+```
+
+**Request Body**
+
+```json
+{
+  "accountNumber":"1074-7285-4832",
+  "amount":12,000,
+}
+```
+
+### 📊 Check Account Balance
+
+**Endpoint**
+
+```
+POST /balance/checkBalance
+```
+
+**Request Body**
+
+```json
+{
+    "cardNumber":"5144 5966 0261 4649",
+    "pin":"4445",
+    "expireDate":"2030-10-12",
+    "cvvNumber":"661",
+    "accountType":"Saving"
+}
+
+```
+
+### 🔐 Change ATM PIN
+
+**Endpoint**
+
+```
+PUT /pin/changePin
+```
+
+**Request Body**
+
+```json
+{
+    "cardNumber":"5144 5966 0261 4649",
+    "pin":"4445",
+    "newPin":"2395",
+    "expireDate":"2030-10-12",
+    "cvvNumber":"661",
+    "accountType":"Saving"
+}
+
+```
+
+### 🧾 Generate Printed Account Report (PDF)
+
+**Endpoint**
+
+```
+POST /statement/generateStatement
+```
+
+**Request Body**
+
+```json
+{
+    "cardNumber":"5144 5966 0261 4649",
+    "pin":"4445",
+    "expireDate":"2030-10-12",
+    "cvvNumber":"661",
+    "accountType":"Saving"
+}
+
+**Response**
+
+```
+Content-Type: application/pdf
+```
+
+📥 Downloads a **PDF account transaction report**
+
+---
+
+## ❌ Error Response Example
+
+```json
+{
+  "status": "ERROR",
+  "message": "Insufficient balance"
+}
+```
 
 ---
 
@@ -161,3 +298,5 @@ Java Backend Developer
 This project is for **educational and learning purposes**.
 
 ---
+
+Just tell me 👍
